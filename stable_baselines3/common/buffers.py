@@ -378,7 +378,7 @@ class RolloutBuffer(BaseBuffer):
         observation_space: spaces.Space,
         action_space: spaces.Space,
         device: Union[th.device, str] = "auto",
-        gae_lambda: float = 1,
+        gae_lambda: float = 0,
         gamma: float = 0.99,
         n_envs: int = 1,
     ):
